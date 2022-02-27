@@ -9,5 +9,15 @@ void MyFree(void *buffer);
 
 void PrintMyMallocFreeList();		/* optional for debugging */
 
+struct block
+{
+	int size;
+	//size_t size;
+
+	struct block *next;
+	//struct block *prev;
+
+	//bool free;
+};
 
 #endif
